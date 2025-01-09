@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    // Incorrect way to select element in some cases
+    let div = document.getElementByIdx('myDiv'); //Typo in method name
+    div.innerHTML = "This text has been changed.";
+  </script>
+</body>
+</html>
